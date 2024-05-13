@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" sizes="32x32" href="images/icon-white.svg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      width: 600px;
+      font-size: 22px;
+    }
+
+    caption {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    td {
+      padding: 16px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contacts</a>
+    </nav>
+  </header>
+  <section class="home-page">
+    <div class="left">
+      <h1 style="font-size: 55px;">Popular Items
+      </h1>
+      <ul style="font-size: 23px">
+        <li>Coffee
+          <ul>
+            <li>Ice Coffee</li>
+            <li>Americano</li>
+            <li>Cappucino</li>
+          </ul>
+        </li>
+
+        <li>Cheese Cake</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
+    <div class="right">
+      <img style="height: 450px;" src="images/shop/Shop.svg" alt="">
+    </div>
+  </section>
+
+  <section class="table">
+    <table>
+      <caption>Menu</caption>
+
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hot Coffee</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Americano</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Cappucino</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Hot Tea</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Ice Latte</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Cookies</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Cheese Cake</td>
+          <td>$5</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </section>
+
+  <footer>
+    <h1>Address</h1>
+    <address style="font-size: 30px;">
+      Shop #10, ABC Market, Dhaka- 1230
+    </address>
+
+    <div style="font-size: 35px;">
+      <a style="color: white;" href="" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a style="color: white;" href="" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a style="color: white;" href="" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

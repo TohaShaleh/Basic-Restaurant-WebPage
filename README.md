@@ -1,3 +1,3 @@
 
-# Basic-Restaurant-Webpage
+# A Functional Restaurant Website
 

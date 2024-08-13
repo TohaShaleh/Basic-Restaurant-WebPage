@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    max-width: 100%;
+    height: 100%;
+}
+.main{
+    max-width: 100%;
+    height: 800px;
+    margin-top: 50px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    width: 80px;
+    height: 40px;
+    background-color: blanchedalmond;
+    font-weight: 900;
+}
+button:hover{
+    cursor: pointer;
+    background-color: chocolate;
+
+}
+#inp{
+    width: 130px;
+    height: 50px;
+}
+#behav{
+    width: 270px;
+    height: 50px;
+}
+#num{
+    width: 160px;
+    height: 45px;
+}
+#sub{
+    width: 160px;
+    height: 40px;
+    font-size: large;
+    background-color: darkgoldenrod;
+}
+#sub:hover{
+    cursor: pointer;
+    background-color: coral;
+}
+
+

@@ -1,8 +1,13 @@
 
+display();
 
+function display(){
 document.querySelector("#fm1").addEventListener("submit",(event)=>{
+    
     var tip=0.0;
     event.preventDefault();
+
+    document.querySelector("#qw").style.backgroundColor = "#EDF08A"; 
 
     //Taking the bill 
     var bill=Number(document.querySelector("#inp").value);
@@ -59,19 +64,48 @@ function calculate(){
     var food_quality=quality;
     
     function space(){
-        return '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+        return '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
     }
 
     document.querySelector("#amount").innerHTML=`Tip amonut : ${space()}    ${(tip_amount).toFixed(2)} <br><br>`
     document.querySelector("#total").innerHTML=`Total Bill : ${space()}     ${total_amount.toFixed(2)} <br><br>`
     document.querySelector(".right #per_person").innerHTML=`Each Person Bill : ${space()} ${each_person.toFixed(2)} <br><br>`
     document.querySelector(".right #experience").innerHTML=`Experience : ${space()}  ${expe} <br><br>`
-    document.querySelector(".right #food_quality").innerHTML=`Food Quality : ${space()}  ${food_quality} <br><br>`
+    document.querySelector(".right #food_quality").innerHTML=`Food Quality : ${space()}  ${food_quality} <br><br> <br>`
+
+    document.querySelector(".reset").innerHTML=`<button id="newbt">Reset</button>`;
+
+    document.querySelector("#newbt").addEventListener("click",()=>{
+
+        document.querySelector("#qw").style.backgroundColor = "#CDA79E" ;
+
     
+        // Clear all the display elements
+    document.querySelector("#amount").textContent=""
+     document.querySelector("#total").textContent=""
+     document.querySelector(".right #per_person").textContent=""
+      document.querySelector(".right #experience").textContent=""
+      document.querySelector(".right #food_quality").textContent=""
+
+      document.querySelector(".right .hed").textContent=""
+
+      document.querySelector(".reset").textContent=""
+
+
+      // Reset all values of the form
+      document.querySelector("#fm1").reset();
+
+      // Again Calling from the scratch  
+      display();
+
+    })
+}
+
+})
+
 }
 
 
-})
 
 
 

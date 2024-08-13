@@ -28,38 +28,57 @@ button{
 }
 button:hover{
     cursor: pointer;
-    background-color: chocolate;
+    background-color: rgb(244, 105, 7);
+    width: 90px;
 
 }
 #inp{
-    width: 130px;
+    width: 190px;
     height: 50px;
+    font-size: large;
+    padding: 12px;
 }
 #behav{
-    width: 270px;
+    width: 360px;
     height: 50px;
+    font-size: large;
+    padding: 10px;
 }
 #num{
-    width: 160px;
+    width: 180px;
     height: 45px;
+    font-size: large;
+    padding: 12px;
 }
 #sub{
     width: 160px;
     height: 40px;
     font-size: large;
     background-color: darkgoldenrod;
+    padding: 10px;
 }
 #sub:hover{
     cursor: pointer;
-    background-color: coral;
+    background-color: rgb(236, 75, 16);
+    font-size: larger;
+    width: 190px;
 }
 
-/* .left{
-    width: 50%;
+.reset{
+    font-size: large;
 }
+
+
 .right{
-    width: 50%;
-    background-color: rgb(255, 127, 202);
-} */
+    margin-top: 170px;
 
+}
+#newbt{
+    width: 200px;
+    height: 40px;
+}
 
+#normal:hover{
+    cursor: pointer;
+    font-size: large;
+}

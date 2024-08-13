@@ -8,6 +8,7 @@
   <title>Coffee Shop</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Bill.css">
 </head>
 
 
@@ -23,8 +24,50 @@
   </header>
   <section class="">
     <div class="main">
-        
+
+        <div class="left">
+            <form action="" id="fm1">
+                <label for="" id=""><h4>Pay Bill :</h4></label>
+                <input type="number" id="inp" placeholder="Enter your amount" required> <br> <br> <br>
+                <div class="tip">
+                    <h3>Select Your Tip</h3> <br>
+
+                    <div class="upper">
+                        <button id="five">5%</button>
+                        <button id="ten">10%</button>
+                        <button id="fifteen">15%</button>
+                    </div>
+                    <br>
+                    <div class="lower">
+                        <button id="tweenty-five">25%</button>
+                        <button id="thirty">30%</button>
+                        <button id="fourty">40%</button>
+                    </div>
+                </div> <br> <br>
+                <label for=""><h4>Food Quality:</h4></label>
+                <input type="radio" id="normal" name="Quality" value="Normal"> 
+                <label for="normal">Normal</label><br> 
+
+                <input type="radio" id="average" name="Quality" value="Average"> 
+                <label for="average">Average</label><br>
+
+                <input type="radio" id="good" name="Quality" value="Good"> 
+                <label for="good">Good</label><br>
+
+                <input type="radio" id="amazing" name="Quality" value="Amazing"> 
+                <label for="amazing">Amazing</label><br><br>
+
+                <label for=""><h4>Behaviour of the waiter : </h4></label>
+                <input type="text" name="" id="behav" placeholder="Was the overall experience were Good ? " required> <br> <br>
+                <label for=""><h4>How many are of you : </h4></label>
+                <input type="number" id="num" required> <br> <br>
+                <input type="submit" id="sub" placeholder="Generate Bill">
+            </form>
+        </div>
+        <div class="right"></div>
+
     </div>
+    <div class="reset"></div>
 
     
     

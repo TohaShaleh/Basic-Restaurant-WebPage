@@ -70,7 +70,7 @@ button:hover{
 
 
 .right{
-    margin-top: 170px;
+    margin-top: 140px;
 
 }
 #newbt{
@@ -81,4 +81,18 @@ button:hover{
 #normal:hover{
     cursor: pointer;
     font-size: large;
+}
+
+.pl{
+    width: 700px;
+    height: auto;
+    background-color: rgb(152, 237, 144);
+    padding: 20px;
+}
+.th{
+    width: 700px;
+    height: auto;
+    background-color: rgb(152, 237, 144);
+    padding: 20px;
+
 }

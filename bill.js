@@ -51,7 +51,7 @@ document.querySelector("#fm1").addEventListener("submit",(event)=>{
     //Taking the number of people
     var people=Number(document.querySelector("#num").value);
 
-    document.querySelector(".right .hed").innerHTML=`<h2>Please Select what Amonut of tip you want to give </h2> <br> <br> `
+    document.querySelector(".right .hed").innerHTML=`<div class="pl"><h2>Please Select what Amonut of tip you want to give : </h2></div><br> <br>`
 
 
 
@@ -72,8 +72,9 @@ function calculate(){
     document.querySelector(".right #per_person").innerHTML=`Each Person Bill : ${space()} ${each_person.toFixed(2)} <br><br>`
     document.querySelector(".right #experience").innerHTML=`Experience : ${space()}  ${expe} <br><br>`
     document.querySelector(".right #food_quality").innerHTML=`Food Quality : ${space()}  ${food_quality} <br><br> <br>`
+    document.querySelector(".again").innerHTML=`<div class="th"><h1>Thank You Sir For Visiting Us.. See You Again <br> Allah HaFeeZ <br> </h1></div><br><br>`
 
-    document.querySelector(".reset").innerHTML=`<button id="newbt">Reset</button>`;
+    document.querySelector(".reset").innerHTML=`<button id="newbt"><h2>Reset</h2></button>`;
 
     document.querySelector("#newbt").addEventListener("click",()=>{
 
@@ -88,6 +89,8 @@ function calculate(){
       document.querySelector(".right #food_quality").textContent=""
 
       document.querySelector(".right .hed").textContent=""
+
+      document.querySelector(".again").textContent=""
 
       document.querySelector(".reset").textContent=""
 

@@ -14,7 +14,10 @@
 
 <body>
   <header>
-    <img src="images/logo.svg" alt="">
+    <a href="index.html">
+        <img src="images/logo.svg" id="lg" alt="">
+    </a>
+     <!-- <img src="images/logo.svg" id="lg" alt=""> -->
     <nav>
       <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
@@ -30,10 +33,10 @@
                 <label for="" id=""><h4>Pay Bill :</h4></label>
                 <input type="number" id="inp" placeholder="Enter your amount" required> <br> <br> <br>
                 <div class="tip">
-                    <h3>Select Your Tip</h3> <br>
+                    <h3>Select Your Tip after submitting the Form</h3> <br>
 
                     <div class="upper">
-                        <button id="five">5%</button>
+                        <button id="five">0%</button>
                         <button id="ten">10%</button>
                         <button id="fifteen">15%</button>
                     </div>
@@ -44,6 +47,7 @@
                         <button id="fourty">40%</button>
                     </div>
                 </div> <br> <br>
+
                 <label for=""><h4>Food Quality:</h4></label>
                 <input type="radio" id="normal" name="Quality" value="Normal"> 
                 <label for="normal">Normal</label><br> 
@@ -59,15 +63,29 @@
 
                 <label for=""><h4>Behaviour of the waiter : </h4></label>
                 <input type="text" name="" id="behav" placeholder="Was the overall experience were Good ? " required> <br> <br>
+
                 <label for=""><h4>How many are of you : </h4></label>
                 <input type="number" id="num" required> <br> <br>
-                <input type="submit" id="sub" placeholder="Generate Bill">
+                <input type="submit" id="sub">
+                <!-- <button id="btn">Submittt</button> -->
             </form>
         </div>
-        <div class="right"></div>
+
+        <div class="right">
+            <div class="hed"></div>
+
+            <div id="amount" class="toha"></div>
+            <div id="total" class="toha"></div>
+            <div id="per_person" class="toha"></div>
+            <div id="experience" class="toha"></div>
+            <div id="food_quality" class="toha"></div>
+
+            <div class="reset"></div>
+
+        </div>
 
     </div>
-    <div class="reset"></div>
+    
 
     
     
@@ -91,6 +109,9 @@
       </a>
     </div>
   </footer>
+
+
+  <script src="bill.js"></script>
 </body>
 
 </html>

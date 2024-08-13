@@ -2,13 +2,21 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html{
+  width: 100%;
+  height: 100%;
+}
 body {
   font-family: "Poppins";
   text-transform: capitalize;
   /* background: #CDA79E  ; */
   background-color: #CDA79E  ;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -19,6 +27,9 @@ header {
   display: flex;
   align-items: center;
   gap: 45px;
+}
+#lg{
+  cursor: pointer;
 }
 
 nav {
@@ -31,6 +42,7 @@ nav {
 a {
   text-decoration: none;
   color: #333;
+  
 }
 
 section {
